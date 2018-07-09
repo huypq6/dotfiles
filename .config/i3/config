@@ -47,7 +47,9 @@ exec --no-startup-id ~/.scripts/remaps
 exec --no-startup-id unclutter
 # Network Manager applet
 exec --no-startup-id nm-applet
-# Run the script to update the mpd i3block on change.
+# Ibus daemon
+exec --no-startup-id ibus-daemon
+# Run the script to update the mpd i3block on change.k
 exec --no-startup-id "pgrep -x i3mpdupdate || i3mpdupdate"
 # Remove recording icon if not properly closed on last shutdown.
 exec --no-startup-id rm -f ~/.larbs/.recording
