@@ -1,0 +1,2 @@
+#!/bin/sh
+acpi | cut -d " " -f4-5

@@ -1,0 +1,14 @@
+rename s2.pro
+search huy
+search lib
+search s.pro
+search Downloads
+search Dow
+search s
+shell 
+open_with gedit
+preview_images true
+set preview_images true
+open_with 
+
+exec
