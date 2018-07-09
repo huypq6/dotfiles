@@ -1,38 +1,44 @@
-*foreground: #00cc00
-*foreground_bold: #a8a19f
-*cursor: #a8a19f
-*background:       #1b1918
-!!*background: rgba(0, 0, 0, .7)
+! special
+*.foreground:   #e6e6e6
+*.background:   #384450
+*.cursorColor:  #c5c8c6
 
-!! black
-*color0: #1b1918
-*color8: #766e6b
-!! red
-*color1: #f22c40
-*color9: #f22c40
-!! green
-*color2: #5ab738
-*color10: #5ab738
-!! yellow
-*color3: #d5911a
-*color11: #d5911a
-!! blue
-*color4: #407ee7
-*color12: #407ee7
-!! magenta
-*color5: #6666ea
-*color13: #6666ea
-!! cyan
-*color6: #00ad9c
-*color14: #00ad9c
-!! white
-*color7: #a8a19f
-*color15: #f1efee
+! black
+*.color0:       #1d1f21
+*.color8:       #969896
+
+! red
+*.color1:       #cc342b
+*.color9:       #cc342b
+
+! green
+*.color2:       #00C94E
+*.color10:      #00C94E
+
+! yellow
+*.color3:       #fba922
+*.color11:      #fba922
+
+! blue
+*.color4:       #3971ed
+*.color12:      #3971ed
+
+! magenta
+*.color5:       #a36ac7
+*.color13:      #a36ac7
+
+! cyan
+*.color6:       #3971ed
+*.color14:      #3971ed
+
+! white
+*.color7:       #c5c8c6
+*.color15:      #ffffff
 
 URxvt.intensityStyles:	false
 URxvt.transparent:	true
-URxvt.shading:		30
-URxvt.background:       [70]#000000
+URxvt.shading:		40
+URxvt.background:       [70]#384450
 URxvt.depth:		32
 URxvt.font: 		xft:monospace:size=11
 URxvt.scrollBar:	false
