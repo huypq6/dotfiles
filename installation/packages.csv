@@ -1,3 +1,4 @@
-Package, Description, Group
-gpick,color chooser, development
-vim, code editor, development
+Package, Description, Group, Repo
+gpick,color chooser, development, apt
+vim, code editor, development, apt
+smartgit, soure code revision controller, development, script
