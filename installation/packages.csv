@@ -1,4 +1,17 @@
 Package, Description, Group, Repo
+build-essential, essential for development, development, apt
+gcc-multilib, library multi arch, development, apt
+gawk, ..., development, apt
+chrpath, ..., development, apt
+diffstat, ..., development, apt
+libncurses5-dev, ..., development, apt
+pkg-config, ..., development, apt
+texi2html, ..., development, apt
+texinfo, ..., development, apt
+libsdl1.2-dev, ..., development, apt
 gpick,color chooser, development, apt
 vim, code editor, development, apt
+subversion, revision controller, development, apt
+git, revision controller, development, apt
 smartgit, soure code revision controller, development, script
+xterm, x terminal, gui, apt
