@@ -1,10 +1,13 @@
 Package, Description, Group, Repo
 yaourt, aur packages manager, devel, 
 gpick,color chooser, development,
-unzip,unzips zip, ...,
-unrar, unrars rar file, ...,
+unzip,unzips zip, office,
+unrar, unrars rar file, office,
 firefox, internet explorer, internet,
 galculator, calculator, development,
 bless, hex editor, development,
 sc-im, excel like terminal, office,A
 skypeforlinux-stable-bin,Skype chat,office,A
+gdb,GDB Debugger, development,
+ibus,Input Method,office,
+ibus-teni,,office,G
