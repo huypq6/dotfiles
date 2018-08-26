@@ -1,6 +1,7 @@
 Package, Description, Group, Repo
 yaourt, aur packages manager, devel, 
 gpick,color chooser, development,
+flameshot,Screen shot powerfull, office
 unzip,unzips zip, office,
 unrar, unrars rar file, office,
 firefox, internet explorer, internet,
