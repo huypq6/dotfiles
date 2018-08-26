@@ -12,6 +12,11 @@ aurinstall() { \
 	yaourt --noconfirm --needed -S "$1" #&>/dev/null 
 }
 
+scriptinstall() { \
+	echo "-> Installing " "$1"" from Script."
+	./scripts/$1.sh
+}
+
 installationloop() { \
 	([ -f "$progsfile" ] && cp "$progsfile" /tmp/progs.csv) || curl -Ls "$progsfile" > /tmp/progs.csv
 	total=$(wc -l < /tmp/progs.csv)
@@ -22,6 +27,7 @@ installationloop() { \
 	"") maininstall "$Package" ;;
 	"A") aurinstall "$Package" ;;
 	"G") gitmakeinstall "$Package" ;;
+	"S") scriptinstall "$Package" ;;
 	"*") echo "Unknow Repo.";;
 	esac
 done < /tmp/progs.csv ;}
