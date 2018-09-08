@@ -26,6 +26,11 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+# Alias function
+# Git
+alias gitns="GIT_SSL_NO_VERIFY=true git"
+
+
 export EDITOR="vim"
 export TERMINAL="urxvt"
 export BROWSER="firefox"
