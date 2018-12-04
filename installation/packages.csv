@@ -14,6 +14,12 @@ diffstat,...,development,
 rpcsvc-proto,...development,
 sc-im, excel like terminal, office,A
 skypeforlinux-stable-bin,Skype chat,office,A
+go,Go Language, development,
+ruby, Ruby, development,
+ruby-rdoc, Ruby Rdoc, development,
 gdb,GDB Debugger, development,
+tmux, Tmux, office,
+vim, editor, office,
+nvim, editor neovim, office,
 ibus,Input Method,office,
 ibus-teni,,office,S
