@@ -1,5 +1,7 @@
 Package, Description, Group, Repo
 yaourt, aur packages manager, devel, 
+adwaita-qt4, qtandgtk look like, desktop,A
+adwaita-qt5, qt and gtk look like, desktop,A
 gpick,color chooser, development,
 flameshot,Screen shot powerfull, office
 unzip,unzips zip, office,
