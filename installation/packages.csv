@@ -1,5 +1,6 @@
 Package, Description, Group, Repo
 yaourt, aur packages manager, devel, 
+pacaur, pacman yaourt combine, devel,
 adwaita-qt4, qtandgtk look like, desktop,A
 adwaita-qt5, qt and gtk look like, desktop,A
 gpick,color chooser, development,
@@ -13,7 +14,8 @@ python2,python version 2, development,
 chrpath,...,development,
 cpio,...,development,
 diffstat,...,development,
-rpcsvc-proto,...development,
+rpcsvc-proto,...,development,
+mqttbox, MQTT Client,development,A
 sc-im, excel like terminal, office,A
 skypeforlinux-stable-bin,Skype chat,office,A
 go,Go Language, development,
