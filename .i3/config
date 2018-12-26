@@ -3,7 +3,7 @@
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
-set $term --no-startup-id urxvt
+set $term --no-startup-id st 
 
 
 # set default desktop layout (default is tiling)
@@ -29,7 +29,7 @@ font xft:URWGothic-Book 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec terminal
+bindsym $mod+Return exec $term
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -46,7 +46,7 @@ bindsym $mod+z exec --no-startup-id morc_menu
 ################################################################################################
 
 exec --no-startup-id volumeicon
-bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
+bindsym $mod+Ctrl+m exec $term -e 'alsamixer'
 #exec --no-startup-id pulseaudio
 #exec --no-startup-id pa-applet
 #bindsym $mod+Ctrl+m exec pavucontrol
@@ -58,7 +58,7 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 # bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 # Start Applications
-bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
+bindsym $mod+Ctrl+b exec $term -e 'bmenu'
 bindsym $mod+F2 exec $BROWSER
 bindsym $mod+F3 exec pcmanfm 
 # bindsym $mod+F3 exec ranger
@@ -67,7 +67,7 @@ bindsym $mod+Shift+F3 exec gksu pcmanfm
 bindsym $mod+F4 exec $term -e ranger 
 bindsym $mod+Shift+F4 $term -e gksu ranger / 
 
-bindsym $mod+F5 exec terminal -e 'mocp'
+bindsym $mod+F5 exec $term -e 'mocp'
 bindsym $mod+F6 exec galculator
 
 bindsym $mod+t exec --no-startup-id pkill compton

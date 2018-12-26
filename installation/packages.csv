@@ -29,5 +29,6 @@ tmux, Tmux, office,
 vim, editor, office,
 nvim, editor neovim, office,
 ibus,Input Method,office,
+st, st terminal,development,S
 ibus-teni,,office,S
 updatetime,,time,S
