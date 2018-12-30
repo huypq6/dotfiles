@@ -1,6 +1,0 @@
-2018/07/09-10:39:55.732 16188 Reusing MANIFEST /home/huypq/.config/skypeforlinux/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
-2018/07/09-10:39:55.732 16188 Recovering log #54
-2018/07/09-10:39:55.755 16188 Reusing old log /home/huypq/.config/skypeforlinux/IndexedDB/file__0.indexeddb.leveldb/000054.log 
-2018/07/09-10:40:06.250 515 Level-0 table #60: started
-2018/07/09-10:40:06.322 515 Level-0 table #60: 1543638 bytes OK
-2018/07/09-10:40:06.373 515 Delete type=0 #54
