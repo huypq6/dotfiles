@@ -38,7 +38,7 @@ battery = BAT0
 [bar/top]
 monitor = eDP1
 width = 100%
-height = 20
+height = 28
 
 
 background = ${colors.background}
@@ -65,7 +65,7 @@ line-size = 2
 
 modules-left = logo i3 title
 modules-center = 
-modules-right = alsa battery network weather date 
+modules-right = alsa battery weather separator date 
 
 tray-position = right
 tray-padding = 2
@@ -99,11 +99,12 @@ ws-icon-default = +
 label-mode-padding = 1
 
 label-focused = %name%
-label-focused-font = 3
+label-focused-font = 4
 label-focused-background = #3244ee
 label-focused-padding = 1
 
 label-unfocused = %name% 
+label-unfocused-font = 4
 label-unfocused-padding = 1
 
 label-visible = 
@@ -115,8 +116,8 @@ label-urgent = %name%
 [module/date]
 type = internal/date
 
-date = "%a %d %b "
-date-alt = "%a %d %b"
+date = "%a, %d %b"
+date-alt = "%a, %d %b"
 
 time-alt = %H:%M
 time = %H:%M
@@ -146,6 +147,44 @@ label-disconnected = 睊
 [module/alsa]
 type = internal/alsa
 
+; Soundcard to be used
+; Usually in the format hw:# where # is the card number
+; You can find the different card numbers in `/proc/asound/cards`
+master-soundcard = default
+speaker-soundcard = default
+headphone-soundcard = default
+
+; Name of the master, speaker and headphone mixers
+; Use the following command to list available mixer controls:
+; $ amixer scontrols | sed -nr "s/.*'([[:alnum:]]+)'.*/\1/p"
+; If master, speaker or headphone-soundcard isn't the default, 
+; use `amixer -c # scontrols` instead where # is the number 
+; of the master, speaker or headphone soundcard respectively
+;
+; Default: Master
+master-mixer = Master
+
+; Optionally define speaker and headphone mixers
+; Default: none
+speaker-mixer = Speaker
+; Default: none
+headphone-mixer = Headphone
+
+; NOTE: This is required if headphone_mixer is defined
+; Use the following command to list available device controls
+; $ amixer controls | sed -r "/CARD/\!d; s/.*=([0-9]+).*name='([^']+)'.*/printf '%3.0f: %s\n' '\1' '\2'/e" | sort
+; You may also need to use `amixer -c # controls` as above for the mixer names
+; Default: none
+headphone-id = 27
+
+; Use volume mapping (similar to amixer -M and alsamixer), where the increase in volume is linear to the ear
+; Default: false
+mapped = true
+
+; Interval for volume increase/decrease (in percent points)
+; Default: 5
+interval = 5
+
 format-volume = <ramp-volume>
 ramp-volume-0 = 
 ramp-volume-1 = 
@@ -158,15 +197,16 @@ format-muted = <label-muted>
 
 [module/separator]
 type = custom/script
-exec = echo " | "
+exec = echo "|"
+format-padding = 0
 
 [module/battery]
 type = internal/battery
 
 full-at = 99
 
-; Use the following commanto list batteries and adapters:
-; $ ls -1 /sys/class/powerupply/
+; Use the following command to list batteries and adapters:
+; $ ls -1 /sys/class/powerpupply/
 battery = ${utils.battery}
 adapter = ${utils.adapter}
 
@@ -204,7 +244,7 @@ animation-discharging-4 = 
 
 animation-discharging-framerate = 500
 
-label-font = 4
+label-font = 5
 
 [module/settings]
 type = custom/script
