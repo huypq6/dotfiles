@@ -34,3 +34,5 @@ nvim, editor neovim, office,
 ibus,Input Method,office,
 ibus-teni,,office,S
 updatetime,,time,S
+wireshark-cli,network snipper,network,
+wireshark-qt,network snipper,network,
