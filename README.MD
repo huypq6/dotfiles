@@ -1,19 +1,22 @@
-# Huy Pham i3 configurations
-This is i3wm environment of HuyPQ.
+# Huy Pham gnome configurations
+This is gnome environment of HuyPQ.
 
 ## Features
-1. Gap
-2. Tiling
-3. Vim for editor
-4. Ranger for Terminal File Manager
 
 ## Color scheme at
 
 https://terminal.sexy/#OERQ5ubmHR8hpxAHFo9F7JMAJGHojjzCJ2DgxcjGlpiWzDQrAMlO-6kiOXHtqWPWOXHt____
 
+## Configuration
+### Fonts 
+| Setting               | Font              | Size  |
+|:----------------------|-------            |------ |
+| Interface Text        | Noto Sans Regular | 11    |
+| Document Text         | Sans Regular      | 11    |
+| Monospace Text        | Hack Regular      | 11    |
+| Legacy Window Title   | Cantarell Bold    | 11    |
 
-## Tools
-
+## Tools  
 1. Create cool text at [Patorjk](http://patorjk.com/software/taag).
 
 ## Other configuration
