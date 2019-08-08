@@ -8,6 +8,12 @@ This is gnome environment of HuyPQ.
 https://terminal.sexy/#OERQ5ubmHR8hpxAHFo9F7JMAJGHojjzCJ2DgxcjGlpiWzDQrAMlO-6kiOXHtqWPWOXHt____
 
 ## Configuration
+### Gnome Extensions
+1. Dash to Panel
+2. Openweather
+3. User themes
+4. Workspace Indicator 
+
 ### Fonts 
 | Setting               | Font              | Size  |
 |:----------------------|-------            |------ |
