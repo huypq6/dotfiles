@@ -1,17 +1,31 @@
-Package, Description, Group, Repo
-build-essential, essential for development, development, apt
-gcc-multilib, library multi arch, development, apt
-gawk, ..., development, apt
-chrpath, ..., development, apt
-diffstat, ..., development, apt
-libncurses5-dev, ..., development, apt
-pkg-config, ..., development, apt
-texi2html, ..., development, apt
-texinfo, ..., development, apt
-libsdl1.2-dev, ..., development, apt
-gpick,color chooser, development, apt
-vim, code editor, development, apt
-subversion, revision controller, development, apt
-git, revision controller, development, apt
-smartgit, soure code revision controller, development, script
-xterm, x terminal, gui, apt
+Package,Description,Group,Repo
+yaourt,aur packages manager,devel, 
+pacaur,pacman yaourt combine,devel,
+adobe-source-code-pro-fonts,font,office,
+cantarell-fonts,font,office,
+nerd-fonts-complete,font,office,A
+ttf-weather-icons,font,office,A
+gpick,color chooser,development,
+flameshot,Screen shot powerfull,office,
+unzip,unzips zip,office,
+unrar,unrars rar file,office,
+firefox,internet explorer,internet,
+galculator,calculator,development,
+bless,hex editor,development,
+python2,python version 2,development,
+chrpath,...,development,
+cpio,...,development,
+diffstat,...,development,
+rpcsvc-proto,...,development,
+mqttbox,MQTT Client,development,A
+sc-im,excel like terminal,office,A
+skypeforlinux-stable-bin,Skype chat,office,A
+go,Go Language,development,
+gdb,GDB Debugger,development,
+tmux,Tmux,office,
+vim,editor,office,
+nvim,editor neovim,office,
+ibus,Input Method,office,
+Ibus-bamboo,Vietnamese Input Method,office,A
+ibus-teni,,office,S
+updatetime,,time,S
