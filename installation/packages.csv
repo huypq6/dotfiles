@@ -29,3 +29,16 @@ ibus,Input Method,office,
 Ibus-bamboo,Vietnamese Input Method,office,A
 ibus-teni,,office,S
 updatetime,,time,S
+kvantum-qt5,kde svg theme,desktop,
+kvantum-theme-arc,kde svg arc theme,desktop,
+papirus-icon-theme,papirus icons,desktop,
+fsearch-git,seach everything,utilites,A
+tlp,Power Saving,power,
+tp_smapi,Modules for ThinkPad's SMAPI functionality,power,
+unzip,unzip file,system,
+jdk8-openjdk,Java Environment,system,
+ntfs-3g,ntfs file system,system,
+p7zip,7z file,system,
+ark,file extractor,system,
+balena-etcher,ISO Writer,system,A
+libreoffice-still,Office Suite,office,
