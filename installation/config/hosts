@@ -1,4 +1,4 @@
-# Title: StevenBlack/hosts
+# Title: Huy Pham (HuyPQ6@outlook.com.vn)
 #
 # This hosts file is a merged collection of hosts from reputable sources,
 # with a dash of crowd sourcing via Github
@@ -27,20 +27,11 @@ ff02::2 ip6-allrouters
 ff02::3 ip6-allhosts
 0.0.0.0 0.0.0.0
 
-# Spring Boot Host 
-127.0.0.1 discovery-server
-127.0.0.1 config-server
-127.0.0.1 auth-server
-
 # VPN Server
 172.105.118.253 vpnserver
 192.168.1.39 cloud.sokulabs.com
 
 # Custom host records are listed here.
-10.8.0.4 workstation
-192.168.0.101 workstation
-192.168.0.102 trung
-103.28.37.245 oninodev
 103.28.37.245 kafka
 103.28.37.245 kafka-0.broker.kafka.svc.cluster.local
 
