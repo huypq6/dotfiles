@@ -41,8 +41,13 @@ unzip,unzip file,system,
 jdk8-openjdk,Java Environment,system,
 ntfs-3g,ntfs file system,system,
 p7zip,7z file,system,
+baobab,Disk Usage,system,
 ark,file extractor,system,
 balena-etcher,ISO Writer,utilities,A
 libreoffice-still,Office Suite,office,
 kdenlive,Video Editor,media,
 vlc,Video Player,media,
+gimp,Photo Editor,media,
+xmind2latex,Convert Xmind to Latex ,office,A
+xmind,Brainstorming and Mind Mapping Software,office,A
+gtkwave,"A wave viewer which reads LXT, LXT2, VZT, GHW and VCD/EVCD files",development,
