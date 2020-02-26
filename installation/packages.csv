@@ -18,6 +18,7 @@ cpio,...,development,
 diffstat,...,development,
 rpcsvc-proto,...,development,
 mqttbox,MQTT Client,development,A
+staruml,UML Design,development,A
 sc-im,excel like terminal,office,A
 skypeforlinux-stable-bin,Skype chat,office,A
 go,Go Language,development,
