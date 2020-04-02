@@ -52,3 +52,7 @@ gimp,Photo Editor,media,
 xmind2latex,Convert Xmind to Latex ,office,A
 xmind,Brainstorming and Mind Mapping Software,office,A
 gtkwave,"A wave viewer which reads LXT, LXT2, VZT, GHW and VCD/EVCD files",development,
+tree,View directory and file in a tree,utility,
+inkscape,Vector graphic editor,media,
+samba,File share server for linux,system,
+imagemagick,Image processor tool,media,
