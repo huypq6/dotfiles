@@ -2,12 +2,12 @@
 This is KDE environment of HuyPQ.
 
 ## 1. Features
-Distro: ArchLinux
-DE: Plasma
-WM: Kwin
-WM Theme: Arc-Dark
-Theme: Arc-Darker
-Icons: Papirus
+Distro: ArchLinux  
+DE: Plasma  
+WM: Kwin  
+WM Theme: Arc-Dark  
+Theme: Arc-Darker  
+Icons: Papirus  
 
 ## 2. Installation 
 ### 2.1. Install ArchLinux
