@@ -12,10 +12,15 @@ Icons: Papirus
 ## 2. Installation 
 ### 2.1. Install ArchLinux
 
-## 3. Color scheme at
+## 3. More Resources
+
+### 3.1 Color scheme at
 
 https://terminal.sexy/#OERQ5ubmHR8hpxAHFo9F7JMAJGHojjzCJ2DgxcjGlpiWzDQrAMlO-6kiOXHtqWPWOXHt____
 
+### 3.2 Wallpaper download at
+
+https://unsplash.com/photos
 
 ## 4. Tools
 
