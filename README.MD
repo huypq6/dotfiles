@@ -9,8 +9,88 @@ WM Theme: Arc-Dark
 Theme: Arc-Darker  
 Icons: Papirus  
 
-## 2. Installation 
-### 2.1. Install ArchLinux
+## 2. Installation Archlinux
+### 2.1. Make bootable USB
+Download Arch ISO from archlinux.org
+Use Balena Etcher to flash into USB.
+
+### 2.2. Install System
+2.2.1 Prepare Root Partition
+
+2.2.2 Copy System to Partition
+```
+mount /dev/sda1 /mnt
+```
+```
+pacstrap /mnt base linux linux-firmware vim nano
+genfstab -U /mnt >> /mnt/etc/fstab
+```
+Now use arch-chroot and enter the mounted disk as root
+```
+arch-chroot /mnt
+```
+Set timezone
+```
+timedatectl list-timezones
+timedatectl set-timezone Asia/Ho_Chi_Minh
+```
+
+This is what sets the language, numbering, date and currency formats for your system.
+
+```
+vim /etc/locale.conf
+```
+
+Uncomment ```en_US.UTF-8```
+
+Setup hostname
+```
+echo myhostname > /etc/hostname
+```
+
+Setup root password
+```
+passwd
+```
+
+Create user
+```
+useradd -m huypq6
+passwd
+```
+Install sudo
+```
+pacman -S sudo
+```
+
+add this line to visudo
+```
+visudo
+huypq6 ALL=(ALL) ALL
+```
+### 2.2.3 Install KDE
+```
+pacman -S xorg xorg-xinit
+pacman -S plasma networkmanager plasma-nm
+pacman -S firefox konsole dolphin
+```
+
+Enable SDDM
+```
+systemctl enable sddm
+```
+
+Enable Network
+```
+systemctl enable NetworkManager
+```
+
+### 2.2.4 Reboot
+```
+exit
+umount /mnt
+reboot
+```
 
 ## 3. More Resources
 
