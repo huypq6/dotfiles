@@ -1,34 +1,61 @@
-# ~/.profile: executed by the command interpreter for login shells.
-# This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
-# exists.
-# see /usr/share/doc/bash/examples/startup-files for examples.
-# the files are located in the bash-doc package.
+# /etc/profile
 
-# the default umask is set in /etc/profile; for setting the umask
-# for ssh logins, install and configure the libpam-umask package.
-#umask 022
+# Set our umask
+umask 022
 
-# if running bash
-if [ -n "$BASH_VERSION" ]; then
-    # include .bashrc if it exists
-    if [ -f "$HOME/.bashrc" ]; then
-	. "$HOME/.bashrc"
-    fi
+# Append our default paths
+appendpath () {
+    case ":$PATH:" in
+        *:"$1":*)
+            ;;
+        *)
+            PATH="${PATH:+$PATH:}$1"
+    esac
+}
+
+appendpath '/usr/local/sbin'
+appendpath '/usr/local/bin'
+appendpath '/usr/bin'
+unset appendpath
+
+export PATH
+
+# Load profiles from /etc/profile.d
+if test -d /etc/profile.d/; then
+	for profile in /etc/profile.d/*.sh; do
+		test -r "$profile" && . "$profile"
+	done
+	unset profile
 fi
 
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
+# Source global bash config
+if test "$PS1" && test "$BASH" && test -z ${POSIXLY_CORRECT+x} && test -r /etc/bash.bashrc; then
+	. /etc/bash.bashrc
 fi
 
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/.local/bin" ] ; then
-    PATH="$HOME/.local/bin:$PATH"
-fi
+# Termcap is outdated, old, and crusty, kill it.
+unset TERMCAP
 
-export EDITOR="vim"
-export TERMINAL="urxvt"
-export BROWSER="firefox"
-ARMGCC_HOME="/opt/gcc-arm-none-eabi-7-2018-q2-update"
-OPENOCD_HOME="/opt/openocd/0.10.0-201610281609-dev"
-PATH="$HOME/.scripts:$ARMGCC_HOME/bin:$PATH"
+# Man is much better than us at figuring this out
+unset MANPATH
+
+export XMODIFIERS="@im=ibus"
+export GTK_IM_MODULE="ibus"
+export QT4_IM_MODULE="ibus"
+export QT_IM_MODULE="ibus"
+
+export EDITOR=vim
+export VISUAL=vim
+
+export ANDROID_HOME=/opt/Android/SDK
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+export _JAVA_OPTIONS='-Dswing.aatext=TRUE -Dawt.useSystemAAFontSettings=on'
+
+# Alias commands
+alias restart_plasma='killall plasmashell && kstart5 plasmashell'
+alias rcd='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+alias prettyjson='python -m json.tool'

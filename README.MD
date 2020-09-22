@@ -71,7 +71,7 @@ huypq6 ALL=(ALL) ALL
 ### 2.2.3 Install KDE
 ```
 pacman -S xorg xorg-xinit
-pacman -S plasma networkmanager plasma-nm
+pacman -S base-devel plasma networkmanager plasma-nm
 pacman -S firefox konsole dolphin
 ```
 
