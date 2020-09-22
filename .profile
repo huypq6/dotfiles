@@ -55,7 +55,18 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 export _JAVA_OPTIONS='-Dswing.aatext=TRUE -Dawt.useSystemAAFontSettings=on'
 
+########################
 # Alias commands
+########################
+
+# Restart Plasma
 alias restart_plasma='killall plasmashell && kstart5 plasmashell'
+
+# Ranger rcd
 alias rcd='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+
+# Show json in pretty mode
 alias prettyjson='python -m json.tool'
+
+# Show running systemd services
+alias running_services='systemctl list-units  --type=service  --state=running'
