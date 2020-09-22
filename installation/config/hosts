@@ -3,7 +3,7 @@
 # This hosts file is a merged collection of hosts from reputable sources,
 # with a dash of crowd sourcing via Github
 #
-# Date: 06 August 2019 17:20:21 (UTC)
+# Date: 22 Sep 2020 15:40:21 (UTC+7)
 # Number of unique domains: 41,596
 #
 # Fetch the latest version of this file: https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
@@ -28,12 +28,8 @@ ff02::3 ip6-allhosts
 0.0.0.0 0.0.0.0
 
 # VPN Server
-172.105.118.253 vpnserver
-192.168.1.39 cloud.sokulabs.com
 
 # Custom host records are listed here.
-103.28.37.245 kafka
-103.28.37.245 kafka-0.broker.kafka.svc.cluster.local
 
 
 # End of custom host records.
