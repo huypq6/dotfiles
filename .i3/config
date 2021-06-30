@@ -32,7 +32,7 @@ floating_modifier $mod
 bindsym $mod+Return exec $term
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+Escape kill
 
 # start program launcher
 bindsym $mod+d exec --no-startup-id rofi -show run 
@@ -46,7 +46,7 @@ bindsym $mod+z exec --no-startup-id morc_menu
 ################################################################################################
 
 #exec --no-startup-id volumeicon
-bindsym $mod+F7 exec terminal -e 'alsamixer'
+#bindsym $mod+F7 exec terminal -e 'alsamixer'
 #exec --no-startup-id pulseaudio
 #exec --no-startup-id pa-applet
 #bindsym $mod+Ctrl+m exec pavucontrol
@@ -59,16 +59,14 @@ bindsym $mod+F7 exec terminal -e 'alsamixer'
 
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
-bindsym $mod+F2 exec $BROWSER
-bindsym $mod+F3 exec pcmanfm 
+bindsym $mod+b exec $BROWSER
 # bindsym $mod+F3 exec ranger
-bindsym $mod+Shift+F3 exec gksu pcmanfm 
 
-bindsym $mod+F4 exec $term -e ranger 
+bindsym $mod+r exec $term -e ranger 
 bindsym $mod+Shift+F4 $term -e gksu ranger / 
 
-bindsym $mod+F5 exec terminal -e 'mocp'
-bindsym $mod+F6 exec galculator
+#bindsym $mod+F5 exec terminal -e 'mocp'
+#bindsym $mod+F6 exec galculator
 
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
@@ -76,7 +74,7 @@ bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart du
 bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
-bindsym $mod+F1 exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
+bindsym $mod+F11 exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # focus_follows_mouse no
@@ -86,7 +84,6 @@ bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
-
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
@@ -186,16 +183,16 @@ bindsym $mod+Ctrl+8 move container to workspace $ws8
 bindsym $mod+Ctrl+9 move container to workspace $ws9
 
 # Move to workspace with focused container
-bindsym $mod+Shift+0 move container to workspace $ws0; workspace $ws0
-bindsym $mod+Shift+1 move container to workspace $ws1; workspace $ws1
-bindsym $mod+Shift+2 move container to workspace $ws2; workspace $ws2
-bindsym $mod+Shift+3 move container to workspace $ws3; workspace $ws3
-bindsym $mod+Shift+4 move container to workspace $ws4; workspace $ws4
-bindsym $mod+Shift+5 move container to workspace $ws5; workspace $ws5
-bindsym $mod+Shift+6 move container to workspace $ws6; workspace $ws6
-bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
-bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
-bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
+bindsym $mod+F10 move container to workspace $ws0; workspace $ws0
+bindsym $mod+F1 move container to workspace $ws1; workspace $ws1
+bindsym $mod+F2 move container to workspace $ws2; workspace $ws2
+bindsym $mod+F3 move container to workspace $ws3; workspace $ws3
+bindsym $mod+F4 move container to workspace $ws4; workspace $ws4
+bindsym $mod+F5 move container to workspace $ws5; workspace $ws5
+bindsym $mod+F6 move container to workspace $ws6; workspace $ws6
+bindsym $mod+F7 move container to workspace $ws7; workspace $ws7
+bindsym $mod+F8 move container to workspace $ws8; workspace $ws8
+bindsym $mod+F9 move container to workspace $ws9; workspace $ws9
 
 # Open applications on specific workspaces
 # assign [class="Thunderbird"] $ws1
@@ -286,7 +283,8 @@ mode "resize" {
 }
 
 # Lock screen
-bindsym $mod+F9 exec --no-startup-id blurlock
+
+#bindsym $mod+F9 exec --no-startup-id blurlock
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -327,6 +325,7 @@ set_from_resource $term_background background
 set_from_resource $term_foreground foreground
 set_from_resource $term_color0     color0
 set_from_resource $term_color1     color1
+
 set_from_resource $term_color2     color2
 set_from_resource $term_color3     color3
 set_from_resource $term_color4     color4
@@ -352,6 +351,8 @@ position bottom
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
 #	tray_output primary
 #	tray_output eDP1
+#exec xrandr --output DP-1 --primary
+#exec xrandr --output DP-2 --rotate left --left-of DP-1
 
 bindsym button4 nop
 bindsym button5 nop
