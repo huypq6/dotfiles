@@ -160,6 +160,18 @@ DesktopIndicatorsCustomColorForCurrentDesktop=#3daee9
 DesktopLabelsStyle=2
 ```
 
+### 6.3. Startup Application
 
-## 7. Other configuration
+Startup application is stored in ```./config/autostart```, copy desktop file of application to here to run in startup.
 
++ Flameshot
+
+
+Install autostart
+```
+cp .config/autostart/* ~/.config/autostart/
+```
+
+
+## 8. Other configuration
+1. [Font Awsome](https://fontawesome.com/v4.7/cheatsheet/)
