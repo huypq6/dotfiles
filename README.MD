@@ -116,5 +116,50 @@ export QT_IM_MODULE=ibus
 
 to **~/.xprofile** and restart your X user session. 
 
-## 6. Other configuration
+
+## 6. Titling Window Manager
+I want to use KDE with titling window manager as i3. I use Kronhkite script for titling with custom shortcut configurationfor virtual desktop and window navigation.
+
+### 6.1. Install KronhKite
+
+
+### 6.2. Config virtual desktop
+Prefer to use 10 virtual desktop with disticn purpose, the desktop name is configured in **kwinrc** file. 
+In order to view desktop indicator in taskbar as i3, i use [virtual-desktop-bar](https://github.com/wsdfhjxc/virtual-desktop-bar) applet
+
+```
+git clone https://github.com/wsdfhjxc/virtual-desktop-bar
+cd virtual-desktop-bar
+./script/install-dependency-arch.sh
+./script/install.sh
+```
+
+virtual-desktop-bar was configured
++ Disable Add Desktop button
++ Show only current desktop
++ Show only occupied desktop
++ Display Number with name
+
+config **plasma-org.kde.plasma.desktop-appletsrc** file in **./config** for virtual-desktop-bar like that 
+
+```
+[Containments][2][Applets][44]
+immutability=1
+plugin=org.kde.plasma.virtualdesktopbar
+
+[Containments][2][Applets][44][Configuration][ConfigDialog]
+DialogHeight=682
+DialogWidth=880
+
+[Containments][2][Applets][44][Configuration][Preferences]
+AddDesktopButtonShow=false
+AddingDesktopsSwitchTo=false
+DesktopButtonsShowOnlyForCurrentDesktop=true
+DesktopButtonsShowOnlyForOccupiedDesktops=true
+DesktopIndicatorsCustomColorForCurrentDesktop=#3daee9
+DesktopLabelsStyle=2
+```
+
+
+## 7. Other configuration
 
