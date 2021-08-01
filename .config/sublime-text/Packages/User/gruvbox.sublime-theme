@@ -1,0 +1,11 @@
+// Documentation at https://www.sublimetext.com/docs/themes.html
+{
+	"variables":
+	{
+		  "gruvbox_sidebar_font_size_15": true  //  |  15
+	},
+	"rules":
+	[
+		
+	]
+}

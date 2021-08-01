@@ -1,0 +1,9 @@
+
+# LOCAL NETWORK
+192.168.174.134 workstation
+
+# NEXUSTI DEVELOPMENT
+
+192.168.6.250 test.nexusti.vn
+103.143.206.212 k8s-gateway
+192.168.5.110 k8s-kafka0

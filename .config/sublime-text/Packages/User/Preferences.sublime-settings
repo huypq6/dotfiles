@@ -1,0 +1,15 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+	"font_size": 13,
+	"theme": "gruvbox.sublime-theme",
+  	"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).sublime-color-scheme",	
+  	"gruvbox_sidebar_font_size_13": true,  //  |  15
+	"gruvbox_tabs_font_size_13": true,
+	"gruvbox_buttons_font_size_13": true,  //  |  15
+	"gruvbox_statusbar_font_size_13": true,  //  |  15
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+}
