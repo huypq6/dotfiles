@@ -53,6 +53,10 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+export OPENSSL_CONF=/etc/ssl
+
+export LIBVIRT_DEFAULT_URI=qemu:///system
+
 export _JAVA_OPTIONS='-Dswing.aatext=TRUE -Dawt.useSystemAAFontSettings=on'
 
 ########################
