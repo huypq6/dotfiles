@@ -172,6 +172,22 @@ Install autostart
 cp .config/autostart/* ~/.config/autostart/
 ```
 
+### 6.4. Stop Baloo indexer
+
+Because Baloo requires a lot of RAM and CPU, i decided to disable Baloo. 
+
++ Goto **Setting -> Search**, disable **Enable File Search**. 
++ Disable baloo by command
+```
+balooctl stop
+balooctl suspend
+balooctl disable
+```
++ Remove index file 
+```
+rm -rf ~/.local/share/baloo
+```
 
 ## 8. Other configuration
 1. [Font Awsome](https://fontawesome.com/v4.7/cheatsheet/)
+2. [Completely disable baloo](https://www.dagorret.net/post/how-to-completely-disable-baloo/)

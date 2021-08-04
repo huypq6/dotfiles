@@ -1054,6 +1054,6 @@ Type=SHORTCUT
 Uuid={05e0c4c6-bc8c-4bd3-b364-848b8c283b71}
 
 [Main]
-AllowMerge=false
+AllowMerge=true
 ImportId=9999
 Version=2
