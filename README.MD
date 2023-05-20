@@ -116,6 +116,13 @@ export QT_IM_MODULE=ibus
 
 to **~/.xprofile** and restart your X user session. 
 
+if this does not work try to add
+```
+export OOO_FORCE_DESKTOP="gnome"
+```
+
+to **~/.xprofile**, this variable worked with libreoffice and IntelliJ Idea
+
 
 ## 6. Titling Window Manager
 I want to use KDE with titling window manager as i3. I use Kronhkite script for titling with custom shortcut configurationfor virtual desktop and window navigation.
